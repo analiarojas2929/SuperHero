@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Finder</title>
+    <!-- Agregar Bootstrap 5.3.3 desde CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Agregar el archivo CSS personalizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Encuentra a tu SuperHero</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SuperHero Finder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="search-form">
+                    <div class="mb-3">
+                        <label for="hero-id" class="form-label">Ingresa el ID del Superhéroe:</label>
+                        <input type="text" class="form-control" id="hero-id" placeholder="Ejemplo: 213">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Buscar Superhéroe</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="hero-info" class="row justify-content-center mt-5">
+            <!-- Aquí se mostrará la información del superhéroe -->
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 SuperHero Finder</p>
+    </footer>
+
+    <!-- Agregar jQuery y Bootstrap JS desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Agregar CanvasJS -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
