@@ -4,7 +4,6 @@ $(document).ready(function() {
     const accessToken = 'd2bfe1c6f55b0dd613d19dc680f41bdd';
     const apiUrl = `https://www.superheroapi.com/api.php/${accessToken}/`;
 
-    // Evento al enviar el formulario
     $('#search-form').on('submit', function(event) {
         event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
 
